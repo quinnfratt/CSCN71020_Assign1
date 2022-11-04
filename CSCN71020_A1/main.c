@@ -22,7 +22,7 @@ void main() {
 	{
 	case 1:
 		add();
-		//break;
+		break;
 	case 2:
 		subtract();
 	}
