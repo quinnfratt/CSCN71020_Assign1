@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 void printWelcomeMenu();
 void printOptions();
 void add();
@@ -21,6 +22,7 @@ void main() {
 	{
 	case 1:
 		add();
+		//break;
 	case 2:
 		subtract();
 	}
@@ -50,11 +52,11 @@ void add() {
 }
 
 void subtract() {
-	double input1, input2, answer;
+	double num1, num2, result;
 	printf("Enter the first value:");
-	scanf_s("%lf", &input1);
+	scanf_s("%lf", &num1);
 	printf("Enter the second value:");
-	scanf_s("%lf", &input2);
-	answer = input2 - input1;
-	printf("%lf - %lf = %lf\n", input2, input1, answer);
+	scanf_s("%lf", &num2);
+	result = num1 - num2;
+	printf("%lf - %lf = %lf\n", num1, num2, result);
 }
